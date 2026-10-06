@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> character morph </title>
+        <link rel="stylesheet" href="alt-style.css" type="text/css">
+        <audio loop autoplay id="myaudio">
+            <source src="assets/music/mii-plaza.mp3" type="audio/mpeg">
+        </audio>
+        
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap');
+</style>
+
+    </head>
+
+    <body>
+
+        <div class="nav">
+
+     <a href="index.html">
+<button class="button" type="button" > home </button>
+    </a>
+    
+    <a href="start-index.html">
+<button class="button" type="button" > submitted characters </button>
+    </a>
+    <a href="end-index.html">
+<button class="button" type="button" > customize me </button>
+    </a>
+
+    
+</div>
+
+
+<div id="image-container">
+  <img id="display-image" src="assets/characters/cj-character.png" alt="Default display">
+  <div id="image-text">user: cj <br>
+miis are a bit limiting so i dont think it really looks like me but i think its as close as itll get</div>
+</div>
+<style type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAIAAQCoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAMAAAAKQAAACkAAAAjAAAAEwAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAACsNDQ3cAgIC7BoaGswAAABvAAAANQAAADIAAAAyAAAALAAAAB4AAAALAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOCwsL+AAAAP8ICAb/AAAA/wAAAP8YGBj+BAQEpAAAAE8AAAAxAAAAMgAAADAAAAAmAAAAFQAAAAUAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAHMAAAD/ZlxT/+nPrf+rnIb/OTMs/wAAAP8AAAD/AwMD/xoaGuMAAAB6AAAANwAAADIAAAAyAAAALAAAACAAAAAMAAAAAAAAAAAAAAAGAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAALQICAngLCwvXAQEB/w8NC//y1bP//+PD///lxP/227v/1bye/3lsW/8SEA7/AAAA/wAAAP8UFBT/BwcHrgAAAFcAAAAxAAAAMgAAADAAAAAWAAAAAAAAAAYAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVw8PD/ECAgL/AAAA/wMEAv87NCz/2MGl///kw///5sP//+C9///jwf//4Lz//eTF/+zTtP+2ppD/RDoy/wEBAP8AAAD/AQEB/wEBAZ8AAAAyAAAAMgAAACwAAAAFAAAABgAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDMMAAAD/GRYT/15UR/+9rJb/69O5//zevP//58n//+K+///kwv//5sb//+TD///hvP//4bz//+fJ///lxf/44cL/2sGp/4l6Zv8RDw3/AAAA/wAAAFkAAAAyAAAAMgAAAAAAAAAGAAAABgAAAAAAAAAAAAAAAAAAAAAAAABIAAAA/0I7NP/u1rz//+LB///hv///4r3//+TC///gu///4L3//9+7///lxP//5cX//+TC///gu///37r//+PA///nxf//48L//+PC/yEeGv8AAAD/AAAATAAAADIAAAAaAAAAAAAAAAYAAAAGAAAAAAAAAAAAAAAAAAAAABcXF/EKCgn/4tG8///nyv//6Mv//+fK///mxv//5cP//+TA///lxf//4Lv//9+6///ds///1qX//+XE///ivP//5MT//+G9///oyf/+4L7/CQkI/wICAugAAAAyAAAAMgAAABwAAAAAAAAABgAAAAYAAAAAAAAAAAAAAAAAAAAxAAAA/zo4Mv//793///Dc///u2P//6s3//+jK///nyv//5sn//+jL///iwv//48D//65Q//+LAP//mSD//+bG///kw///58f//+G8/+3Prf8AAAD/HR0d/gAAADMAAAAyAAAAIgAAAAAAAAAGAAAABgAAAAAAAAAAAAAAAAgICKMCAgL/qaSe///16///8eH//+/d///x3f//79z//+zT///ozP//58r//+jL///mxv//jAL//4wA///DfP//37r//+G9///mx///48D/89e2/xIQD/8ZGRn8AAAANQAAADIAAAAsAAAABAAAAAYAAAAGAAAAAAAAAAAAAAAKDg4O/xsbG//89/D//vft///37v//9u3///Pm///w3f//8Nz//+/d///u2f//6tD//9Oc//+MAP//iwH//+LB///hvf//4Lz//+O+///mxf//5cb/TUQ6/wICAv8AAABKAAAAMgAAADAAAAAHAAAABgAAAAYAAAAAAAAAAAAAACMAAAD/Xl5e///////IyMb/k5GO//337v//9+7///ft///26///8eL//+/c///v3P//niX//4sA//+mPv//6Mv//+nM///myP//48H//+fK///jwv+zoIT/AAAA/wAAAHYAAAAyAAAALwAAAAYAAAAGAAAABgAAAAAAAAAAAQEBWQAAAP+7u7v//////2NjY/9DQ0P/////////+///+vP///fu///37f//9u3//+3b//+MAP//jAD//+K9///u2f//6s///+fK///oy///58r//+TF/56NeP8AAAD/AAAAcgAAADIAAAAtAAAABQAAAAYAAAAGAAAAAAAAAAAAAAAqAQEB/3R0dP/e3t7/GBgY/7S0tP////////////////////7///jv///u2///vXH//4sA//+TFP//8eP//+/d///x3f//8Nz//+3W///pzf/+5sn/ZVxR/wAAAP8AAAB2AAAAMgAAAB8AAAAAAAAABgAAAAYAAAAAAAAAAAAAAAYODg70Dw8P/3V1df8cHBz/+vr6////////////////////////z5P//5MQ//+NAf//jAD//8iI///37v//9+3///Tp///w3///79z///Dc/+fYxP8DAwL/CAgI/wAAAD0AAAAxAAAADQAAAAAAAAAGAAAABgAAAAAAAAAAAAAAAAAAAEcBAQH/AAAA/25ubv////////////////////////7+//+0Xf//iwD//4sA//+LAP///Pj///75///58f//9+7///fu///27P//8uT/rqSX/wAAAP8JCQnBAAAAMgAAACgAAAABAAAAAAAAAAYAAAAGAAAAAAAAAAAAAAAAAAAAAg0NDekPDw//4uLi/////////////v7+//////////////jy///kx///tl3//6xG/////////////////////P//+/b///jv//ry6P8xLiz/AAAA/wAAAGAAAAAyAAAAFwAAAAAAAAAAAAAABgAAAAYAAAAAAAAAAAAAAAAAAAAaBQUF/zU1Nf/////////////////c3Nz/ZWVl//7+/v///////////////f//+/n/////////////////////////////////0tLQ/wAAAP8SEhL4AAAAMgAAAC4AAAAGAAAAAAAAAAAAAAAGAAAABgAAAAAAAAAAAAAAAAEBAYADAwP/p6en/////////////////4WFhf+Li4v////////////6+vr/8fHx//////////////////////////////////7+/v91dXX/AAAA/wAAAJAAAAAyAAAAIgAAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAAAAAAABGBgY/BoaGv/39/f////////////v7+//EhIS/9vb2////////////8/Pz/9mZmb//Pz8////////////////////////////7e3t/wgICP8FBQX/AAAARAAAADIAAAAPAAAAAAAAAAAAAAAAAAAABgAAAAYAAAAAAAAAAAAAAEEAAAD/YWFh/////////////////8XFxf8QEBD/9vb2///////8/Pz/ampq/8LCwv///////////7a2tv+0tLT///////////+3t7f/AAAA/wwMDM8AAAAyAAAAKgAAAAIAAAAAAAAAAAAAAAAAAAAGAAAABgAAAAAAAAAADw8PvQsLC//Z2dn////////////+/v7/SUlJ/wAAAP9AQED/vr6+/3t7e/8GBgb/m5ub///////9/f3/Ghoa/6Wlpf//////+/v7/z8/P/8AAAD/AAAAaQAAAC4AAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAABMJCQn/Ly8v/////////////////+Dg4P8AAAD/AAAA/wAAAP8AAAD/AQEB/wAAAP8AAAD/GBgY/ysrK/8AAAD/ExMT/6Kiov9mZmb/AAAA/xYWFusAAAAjAAAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAYAAAAAAAAAcAEBAf+Wlpb/////////////////lJSU/wAAAP8BAQGhAAAAXAEBAYQAAAA3AAAAKwAAAJkAAAD/CAgI9xAQEMoAAAD+AAAA/wAAAP8dHR35AAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAABgAAAAAZGRn1FxcX//T09P////////////Ly8v8SEhL/AwMD/wAAAEkAAAAyAAAAEQAAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAAQAAAA/AAAAIgAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAGAAAANQAAAP9VVVX/////////////////zc3N/wAAAP8LCwvZAAAAMgAAACsAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAYNDQ2lBgYG/8/Pz/////////////////9aWlr/AAAA/wAAAHEAAAAyAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAABgsLC7cCAgL/8fHx////////////4eHh/wAAAP8MDAz+AAAANQAAAC8AAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAGAAAAbQAAAP+mpqb///////39/f+Ghob/AAAA/wICAqYAAAAvAAAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAYAAAAaCAgI6wAAAP8jIyP/Kysr/wICAv8RERHxAAAALQAAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAABgAAAAAAAAAoCgoKwgYGBv8EBAT7Dg4OvgAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAG///////4////8B////AH///AAP/+AAA/+AAAP/gAAD/wAAA/8AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP/AAAD/wAAB/8AAAf+AAAH/gAAD/4AAA/8AAAf/AAAH/wCwD/4B///+Af///AP///wD///+A////gf///8P///8='), auto; }</style>
+
+<div id="button-container">
+  <button 
+data-src="assets/characters/cj-character.png" 
+data-text="user: cj <br>
+miis are a bit limiting so i dont think it really looks like me but i think its as close as itll get">cj</button>
+  <button data-src="assets/characters/jordan-character.png"
+  data-text="user: jordan <br>
+  I put a bunch of stuff i like from other media onto a guy. thats really mainly it.">jordan</button>
+  <button data-src="assets/characters/chai-character.png"
+  data-text="user: chai <br>
+  i love y2k fashion and as a fat person its harder to dress the way i wanna so its easier to dress up my lil doll">chai</button>
+</div>
+
+<!-- 
+
+div class="scroll">
+<img src="assets/characters/cj-character.png" class="cj-image">
+<img src="assets/characters/jordan-character.png" class="jordan-image">
+<img src="assets/characters/chai-character.png" class="chai-image">
+<img src="assets/characters/sophie-character.png" class="sophie-image">
+<img src="assets/characters/nicole-character.png" class="nicole-image">
+
+<p> user: cj <br>
+    miis are a bit limiting so i dont think it really looks like me but i think its as close as itll get
+
+</p>
+<p> user: jordan <br>
+I put a bunch of stuff i like from other media onto a guy. thats really mainly it.
+</p>
+<p> user: chai <br>
+i love y2k fashion and as a fat person its harder to dress the way i wanna so its easier to dress up my lil doll  </p>
+<p> user: sophie <br>
+I wanted her to look like a chibi version of me
+ </p>
+<p> user: nicole <br>
+I use them as an outlet to represent things I’ve encountered in life. </p>
+
+</div>
+
+    
+</div>
+//
+
+
+-->
+
+
+
+</body>
+<script>
+
+const buttons = document.querySelectorAll('#button-container button');
+const displayImage = document.getElementById('display-image');
+const imageText = document.getElementById('image-text');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+
+        // Change image
+        const newSrc = this.getAttribute('data-src');
+        displayImage.setAttribute('src', newSrc);
+
+        // Change hover text
+        const newText = this.getAttribute('data-text');
+        imageText.innerHTML = newText;
+
+    });
+});
+
+
+</script>
+</html>

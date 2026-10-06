@@ -1,0 +1,129 @@
+html {
+    scroll-behavior: smooth;
+    background-image: url(assets/mainbg.png);
+    background-color: #ffffffe3;
+    animation: barberpole 50s linear infinite;
+
+}
+@keyframes barberpole {
+  100% {
+    background-position: -100% -100%;
+}
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+   
+}
+.circle {
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    font-family: 'Geist Pixel', sans-serif;
+    color: #2407ff;
+    text-align: center;
+    bottom: 20px;
+    background-color: #a2a2a2;
+}
+
+button:hover {
+background: linear-gradient(to bottom,  rgb(132, 232, 237) 0%,rgb(125,225,230) 50%,rgb(105,215,220) 51%,rgb(254,254,254) 100%);
+font-style:italic;
+font-size:2em;
+color: #2407ff;
+}
+
+.container {
+    display: flex;
+}
+
+
+
+#image-container {
+    background-image: url('assets/1x/circle.png');
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    
+    padding: 20px;
+    position: relative;
+}
+
+#image-container img {
+  display: block;
+    height: 600px;
+    position: absolute;
+top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#image-text {
+    position: absolute;
+    display: grid;
+    float: left;
+    max-width: 300px;
+    padding: 30px;
+    border-radius: 20%;
+margin: auto;
+margin-top: 175px;
+
+
+background: linear-gradient(to bottom,  rgb(132, 232, 237) 0%,rgb(125,225,230) 50%,rgb(105,215,220) 51%,rgb(254,254,254) 100%);
+
+border-radius: 40px;
+box-shadow: 20px 20px 40px #bdbdbd,
+             -20px -20px 40px #ffffff;
+             
+border-radius: 26px;
+
+
+
+
+    font-family: 'Geist Pixel', sans-serif;
+    font-size: 30px;
+    color: #2407ff;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    pointer-events: none;
+}
+#image-container img:hover {
+   height: 605px;
+}
+
+#image-container:hover #image-text {
+    opacity: 1;
+}
+
+#button-container {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
